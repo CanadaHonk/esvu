@@ -57,7 +57,7 @@ class BaliInstaller extends Installer {
 
   async install() {
     const js = await this.registerAsset('balde');
-    this.binPath = await this.registerScript('bali', `"${js}" run`);
+    this.binPath = await this.registerScript('bali', `"${js}"`);
   }
 
   async test() {
